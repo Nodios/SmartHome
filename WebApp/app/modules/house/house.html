@@ -1,0 +1,9 @@
+<div>
+    <div ng-if="dataLoaded">
+        {{outputData | json}}
+    </div>
+</div>
+
+<div ng-if="dataLoaded">
+    <multi-line-chart-directive data="outputData"></multi-line-chart-directive>
+</div>

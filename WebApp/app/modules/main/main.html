@@ -1,0 +1,35 @@
+<div>
+	<div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a ui-sref="root.house" ui-sref-opts="{reload: true}">
+                        <span class="glyphicon glyphicon-record"></span> {{title}}
+                    </a>
+                </li>
+                <li>
+                    <a ui-sref="root.house" ui-sref-opts="{reload: true}"> House</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div ui-view="main-content"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+        <div id="page-footer-wrapper">
+            
+        </div>
+    </div>
+</div>

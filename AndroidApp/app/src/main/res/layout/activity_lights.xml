@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#e6f2ff">
+
+    <ImageView
+        android:src="@drawable/house"
+        android:id="@+id/imageView2"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/activity_vertical_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:src="@drawable/lights"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="216dp"
+        android:id="@+id/light1"
+        android:scaleType="centerInside"
+        android:layout_height="50dp"
+        android:background="@drawable/lights"
+        android:layout_alignParentLeft="true" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/lights"
+        android:layout_alignBottom="@+id/light1"
+        android:layout_toEndOf="@+id/light1"
+        android:layout_marginStart="49dp"
+        android:layout_marginBottom="87dp"
+        android:id="@+id/light2"
+        android:background="@drawable/lights"
+        android:scaleType="centerInside"
+        android:layout_toRightOf="@+id/light1"
+        android:layout_marginLeft="49dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/lights"
+        android:layout_alignBottom="@+id/light1"
+        android:layout_toEndOf="@+id/light2"
+        android:id="@+id/light3"
+        android:background="@drawable/lights"
+        android:scaleType="centerInside"
+        android:layout_toRightOf="@+id/light2" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/lights"
+        android:layout_below="@+id/light2"
+        android:layout_toStartOf="@+id/light3"
+        android:layout_marginTop="57dp"
+        android:id="@+id/light4"
+        android:background="@drawable/lights"
+        android:scaleType="centerInside"
+        android:layout_toLeftOf="@+id/light3" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/lights"
+        android:layout_alignTop="@+id/light4"
+        android:layout_toEndOf="@+id/light3"
+        android:layout_marginStart="48dp"
+        android:id="@+id/light5"
+        android:background="@drawable/lights"
+        android:scaleType="centerInside"
+        android:layout_toRightOf="@+id/light3"
+        android:layout_marginLeft="48dp" />
+
+</RelativeLayout>

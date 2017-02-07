@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ferit.davor.smarthouse"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <!-- Permissions the Application Requires -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!-- Mqtt Service -->
+        <service android:name="org.eclipse.paho.android.service.MqttService" />
+
+        <!-- Main Activity -->
+        <activity android:name=".ClientConnections">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:hardwareAccelerated="false"
+            android:label="Smart House" />
+        <!-- New Connection Activity -->
+        <activity
+            android:name=".NewConnection"
+            android:label="@string/title_activity_new_connection" />
+
+        <!-- Advanced Options Screen -->
+        <activity
+            android:name=".Advanced"
+            android:label="@string/title_activity_advanced" />
+
+        <!-- Last Will Activity -->
+        <activity
+            android:name=".LastWill"
+            android:label="@string/title_activity_last_will" />
+
+        <!-- Connection Details Activity -->
+        <activity
+            android:name=".ConnectionDetails"
+            android:label="@string/title_activity_connection_details" />
+        <activity
+            android:name=".LightsActivity"
+            android:label="Lights control" />
+        <activity
+            android:name=".DoorActivity"
+            android:label="@string/title_activity_door" />
+        <activity
+            android:name=".WindowActivity"
+            android:label="@string/title_activity_window" />
+        <activity
+            android:name=".VentilationActivity"
+            android:label="Ventilation Control" />
+        <activity
+            android:name=".StatusActivity"
+            android:label="House Status"></activity>
+    </application>
+
+</manifest>
